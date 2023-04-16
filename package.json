@@ -1,0 +1,38 @@
+{
+  "private": true,
+  "sideEffects": false,
+  "scripts": {
+    "build": "remix build && keystone prisma migrate deploy",
+    "dev": "remix dev",
+    "typecheck": "tsc",
+    "postinstall": "keystone postinstall"
+  },
+  "packageManager": "pnpm@8.2.0",
+  "dependencies": {
+		"@keystone-6/core": "^5.1.0",
+		"@prisma/client": "4.11.0",
+		"@remix-run/react": "^1.15.0",
+		"@remix-run/vercel": "^1.15.0",
+		"@vercel/node": "^2.6.2",
+		"@vercel/remix": "^1.15.0",
+		"bcryptjs": "^2.4.3",
+		"isbot": "^3.6.5",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+		"@types/bcryptjs": "^2.4.2",
+		"@remix-run/dev": "^1.15.0",
+		"@remix-run/eslint-config": "^1.15.0",
+		"@remix-run/serve": "^1.15.0",
+		"@types/node": "^18.15.11",
+		"@types/react": "^18.0.25",
+		"@types/react-dom": "^18.0.8",
+		"eslint": "^8.27.0",
+		"prisma": "4.11.0",
+		"typescript": "^5.0.4"
+  },
+  "engines": {
+    "node": ">=14"
+  }
+}
